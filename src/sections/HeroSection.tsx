@@ -6,7 +6,10 @@ import portrait from '../assets/portrait.png'
 export default function HeroSection() {
   return (
     <section className="relative h-screen flex flex-col" style={{ overflowX: 'clip' }}>
-      <div className="relative flex-1 flex flex-col justify-center overflow-hidden pb-16 sm:pb-20 md:pb-32">
+      <div
+        className="relative flex-1 flex flex-col justify-center pb-16 sm:pb-20 md:pb-32"
+        style={{ overflowX: 'clip', overflowY: 'visible' }}
+      >
         <FadeIn delay={0.15} y={40}>
           <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[11vw] sm:text-[11vw] md:text-[12vw] lg:text-[13vw] mt-6 sm:mt-4 md:-mt-5">
             hi, i&apos;m ananya
