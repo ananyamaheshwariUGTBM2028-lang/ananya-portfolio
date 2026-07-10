@@ -14,7 +14,10 @@ export default function HeroSection() {
         </FadeIn>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 z-10 w-[155px] sm:w-[200px] md:w-[250px] lg:w-[290px] pointer-events-none">
+      <div
+        className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 z-10 pointer-events-none"
+        style={{ width: 'clamp(140px, 21vw, 320px)' }}
+      >
         <FadeIn delay={0.6} y={30}>
           <Magnet padding={260} strength={2.2} maxOffset={90} className="pointer-events-auto">
             <img src={portrait} alt="Ananya" className="w-full h-auto" />
